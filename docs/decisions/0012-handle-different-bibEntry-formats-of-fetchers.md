@@ -23,7 +23,7 @@ How can this inconsistency between fetchers and their used formats be addressed?
 
 Chosen option: "Introduce a new layer between fetchers and caller, such as a FetcherHandler, that manages the conversion",
 because it can compose all steps required during importing, not only format conversion of fetched entries.
-[As described here (comment)](https://github.com/JabRef/jabref/pull/6687)
+As described in [PR #6687](https://github.com/JabRef/jabref/pull/6687).
 
 ## Pros and Cons of the Options
 
@@ -31,7 +31,7 @@ because it can compose all steps required during importing, not only format conv
 
 * Good, because fetchers do not have to think about conversion (Separation of concerns)
 * Good, because no other code that currently relies on fetchers has to do the conversion
-* Good, because this layer can be used for any kind of import to handle all conversion steps (not only format). [As described here (comment)](https://github.com/JabRef/jabref/pull/6687)
+* Good, because this layer can be used for any kind of import to handle all conversion steps (not only format). As described in [PR #6687](https://github.com/JabRef/jabref/pull/6687).
 * Good, because this layer can easily be extended if the import procedure changes
 * Bad, because this requires a lot of code changes
 * Bad, because this has to be tested extensively
